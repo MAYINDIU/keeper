@@ -70,7 +70,7 @@
 .fixed-bottom img {
         width: 8%;
         margin-left: 50px;
-        margin-bottom: 12px;
+        margin-bottom: 0px;
     }
 
     .fixed-bottom img:last-child {
@@ -79,8 +79,8 @@
 
     @media (max-width: 768px) {
         .fixed-bottom img {
-            width: 100%; /* Set the width to 100% for smaller screens */
-            margin-left: 0; /* Remove the left margin for smaller screens */
+            width: 50%; /* Set the width to 100% for smaller screens */
+            margin-left: 0px; /* Remove the left margin for smaller screens */
         }
 
         .fixed-bottom img:last-child {
@@ -89,22 +89,35 @@
     }
     @media (max-width: 576px) {
         .fixed-bottom img {
-            width: 80%; /* Set the width to 100% for smaller screens */
-            margin-left: 0;
-            margin-bottom: 8px; /* Remove the left margin for smaller screens */
+            width: 50%; /* Set the width to 100% for smaller screens */
+            margin-left: 100px;
+            margin-bottom: 0px; 
+            align-items: center;/* Remove the left margin for smaller screens */
         }
 
-        .fixed-bottom img:last-child {
-            margin-left: 0; /* Remove the left margin for the last image on smaller screens */
-        }
+      
     }
 
-    </style>
+    /* Mobile devices */
+@media (max-width: 767px) {
+  .custom-text-align {
+    text-align: center;
+  }
+}
+
+/* Desktop devices */
+@media (min-width: 768px) {
+  .custom-text-align {
+    text-align: start;
+  }
+}
+
+  </style>
 
 </head>
 
 <body class="g-sidenav-show  bg-gray-200">
-  <aside class="sidenav navbar navbar-vertical navbar-expand-xs border-0 border-radius-xl my-3 fixed-start ms-3   bg-gradient-dark" id="sidenav-main">
+  <aside style="height: 100%;" class="sidenav navbar navbar-vertical navbar-expand-xs border-0 border-radius-xl my-3 fixed-start ms-3   bg-gradient-dark" id="sidenav-main">
     <div class="sidenav-header">
       <i class="fas fa-times p-3 cursor-pointer text-white opacity-5 position-absolute end-0 top-0 d-none d-xl-none" aria-hidden="true" id="iconSidenav"></i>
       <a class="navbar-brand m-0" href="index.html">
@@ -190,13 +203,14 @@
             <span class="sidenav-normal  ms-2  ps-1">Contact</span>
           </a>
         </li>
-   
-        <div class="fixed-bottom  text-start">
-          <div>
-              <img class="" src="./assets/img/keeper.webp" alt="">
-          </div>
          
-      </div>
+        <li> 
+          <div class="fixed-bottom custom-text-align">
+            <img class="" src="./assets/img/keeper.webp" alt="">
+          </div>
+          
+    </li>
+       
         </ul>
        
     
