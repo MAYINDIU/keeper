@@ -111,7 +111,11 @@
     text-align: start;
   }
 }
-
+  /* mouse over link */
+  a:hover {
+      color: #F44336;
+      text-decoration: underline;
+    }
   </style>
 
 </head>
@@ -179,9 +183,7 @@
           </div>
         </li>
         <hr class="horizontal light mt-2 mb-2">
-        <li class="nav-item">
-          <h6 class="ps-4  mt-2 ms-2 text-uppercase text-xs font-weight-bolder text-white">GENERAL</h6>
-        </li>
+    
        
         <li class="nav-item">
           <a class="nav-link text-white " href="documents.html">
@@ -255,9 +257,22 @@
           
           <nav class="p-0 mt-3 d-xl-block d-none" aria-label="breadcrumb ">
             <ol class="breadcrumb bg-white">
-              <h5 class="breadcrumb-item mt-2"><a href="index.html">Dashboard</a></h5>
-              <h5 class="breadcrumb-item mt-2 active" aria-current="page">Provider</h5>
-              <h5 class="breadcrumb-item mt-2 active" aria-current="page">Team</h5>
+           
+              <p class="breadcrumb-item mt-3 active" aria-current="page">
+                <a href="index.html"
+                  class=" link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Dashboard
+                </a>
+              </p>
+
+              <p class="breadcrumb-item mt-3 active" aria-current="page">
+                Provider
+
+              </p>
+              <p style="color: #233A74; font-weight: bold;" class="breadcrumb-item mt-3 active" aria-current="page">
+                Team
+
+              </p>
+
 
             </ol>
           </nav>
